@@ -1,46 +1,8 @@
 import subprocess
 import sys
 
-from ...wordcount import parse_args, read_all_lines
-
-# def test_parse_args():
-
-#     try:
-#         subprocess.run(
-#             [
-#                 "python3",
-#                 "-m",
-#                 "homework",
-#                 "data/input/",
-#                 "data/output/",
-#             ],
-#             check=True,
-#         )
-#     except subprocess.CalledProcessError as e:
-#         raise Exception(f"Error running the homework script: {e}")
-
-#     input_folder, output_folder = parse_args()
-#     assert input_folder == "data/input"
-#     assert output_folder == "data/output"
-
-# opcion 2 solo print
-# def test_parse_args():
-
-#     result = subprocess.run(
-#         [
-#             "python3",
-#             "-m",
-#             "homework",
-#             "data/input/",
-#             "data/output/",
-#         ],
-#         text=True,
-#         capture_output=True,
-#     )
-
-#     assert result.returncode == 0
-#     assert "data/input/" in result.stdout
-#     assert "data/output/" in result.stdout
+from ..parse_args import parse_args
+from ..read_all_lines import read_all_lines
 
 
 def test_parse_args():
